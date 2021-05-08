@@ -6,6 +6,7 @@ target 'BridgefyTechChallenge' do
     inhibit_all_warnings!
 
     pod 'Alamofire'
+    pod 'ReachabilitySwift'
     pod 'SDWebImage'
     
 end
