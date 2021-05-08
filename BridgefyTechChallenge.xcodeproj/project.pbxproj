@@ -13,9 +13,11 @@
 		0B6E48052646FC6400E042B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E48032646FC6400E042B5 /* Main.storyboard */; };
 		0B6E48072646FC6500E042B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E48062646FC6500E042B5 /* Assets.xcassets */; };
 		0B6E480A2646FC6500E042B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E48082646FC6500E042B5 /* LaunchScreen.storyboard */; };
+		9759C414DFBFA3FF71739DE8 /* Pods_BridgefyTechChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F3F78C9EF044BA3DC06B58 /* Pods_BridgefyTechChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06F3F78C9EF044BA3DC06B58 /* Pods_BridgefyTechChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BridgefyTechChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6E47FA2646FC6400E042B5 /* BridgefyTechChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgefyTechChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6E47FD2646FC6400E042B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B6E47FF2646FC6400E042B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		0B6E48062646FC6500E042B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B6E48092646FC6500E042B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B6E480B2646FC6500E042B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27501A770DD2C529941D41FF /* Pods-BridgefyTechChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgefyTechChallenge.release.xcconfig"; path = "Target Support Files/Pods-BridgefyTechChallenge/Pods-BridgefyTechChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		CA43253EC09AA41689895FB0 /* Pods-BridgefyTechChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgefyTechChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BridgefyTechChallenge/Pods-BridgefyTechChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9759C414DFBFA3FF71739DE8 /* Pods_BridgefyTechChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0B6E47FC2646FC6400E042B5 /* BridgefyTechChallenge */,
 				0B6E47FB2646FC6400E042B5 /* Products */,
+				109206F818982EEE57E1DC57 /* Pods */,
+				BEE567377E320449F206F4F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = BridgefyTechChallenge;
 			sourceTree = "<group>";
 		};
+		109206F818982EEE57E1DC57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA43253EC09AA41689895FB0 /* Pods-BridgefyTechChallenge.debug.xcconfig */,
+				27501A770DD2C529941D41FF /* Pods-BridgefyTechChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEE567377E320449F206F4F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06F3F78C9EF044BA3DC06B58 /* Pods_BridgefyTechChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B6E480E2646FC6500E042B5 /* Build configuration list for PBXNativeTarget "BridgefyTechChallenge" */;
 			buildPhases = (
+				FE769EC9A2C5EEAF14B88CA5 /* [CP] Check Pods Manifest.lock */,
 				0B6E47F62646FC6400E042B5 /* Sources */,
 				0B6E47F72646FC6400E042B5 /* Frameworks */,
 				0B6E47F82646FC6400E042B5 /* Resources */,
+				29B78D8F5C17BAD60A6E926A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29B78D8F5C17BAD60A6E926A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BridgefyTechChallenge/Pods-BridgefyTechChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BridgefyTechChallenge/Pods-BridgefyTechChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BridgefyTechChallenge/Pods-BridgefyTechChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE769EC9A2C5EEAF14B88CA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BridgefyTechChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B6E47F62646FC6400E042B5 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		0B6E480F2646FC6500E042B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA43253EC09AA41689895FB0 /* Pods-BridgefyTechChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		0B6E48102646FC6500E042B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27501A770DD2C529941D41FF /* Pods-BridgefyTechChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
