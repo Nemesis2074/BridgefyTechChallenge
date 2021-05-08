@@ -12,6 +12,18 @@
 		0B6E48052646FC6400E042B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E48032646FC6400E042B5 /* Main.storyboard */; };
 		0B6E48072646FC6500E042B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E48062646FC6500E042B5 /* Assets.xcassets */; };
 		0B6E480A2646FC6500E042B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E48082646FC6500E042B5 /* LaunchScreen.storyboard */; };
+		0B86666C2647166E008E4B3E /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86666B2647166E008E4B3E /* Authentication.swift */; };
+		0B8666702647167C008E4B3E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86666F2647167C008E4B3E /* AppSettings.swift */; };
+		0B866673264717CD008E4B3E /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B866672264717CD008E4B3E /* ServicesManager.swift */; };
+		0B86667B264718F9008E4B3E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86667A264718F9008E4B3E /* Response.swift */; };
+		0B86667E2647197F008E4B3E /* CountriesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86667D2647197F008E4B3E /* CountriesServices.swift */; };
+		0B86668326471A12008E4B3E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86668226471A12008E4B3E /* Country.swift */; };
+		0B86668726471A22008E4B3E /* DetailCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86668626471A22008E4B3E /* DetailCountry.swift */; };
+		0B86668A26471B82008E4B3E /* Services+Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86668926471B82008E4B3E /* Services+Countries.swift */; };
+		0BD4486626473723006BDB7B /* Model+Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4486526473723006BDB7B /* Model+Countries.swift */; };
+		0BD4486A264739C3006BDB7B /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD44869264739C3006BDB7B /* LoginInfo.swift */; };
+		0BD4486D26473A33006BDB7B /* Model+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4486C26473A33006BDB7B /* Model+Auth.swift */; };
+		0BD4487026473ADC006BDB7B /* Services+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4486F26473ADC006BDB7B /* Services+Auth.swift */; };
 		9759C414DFBFA3FF71739DE8 /* Pods_BridgefyTechChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F3F78C9EF044BA3DC06B58 /* Pods_BridgefyTechChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +36,18 @@
 		0B6E48062646FC6500E042B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B6E48092646FC6500E042B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B6E480B2646FC6500E042B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B86666B2647166E008E4B3E /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		0B86666F2647167C008E4B3E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		0B866672264717CD008E4B3E /* ServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		0B86667A264718F9008E4B3E /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		0B86667D2647197F008E4B3E /* CountriesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesServices.swift; sourceTree = "<group>"; };
+		0B86668226471A12008E4B3E /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		0B86668626471A22008E4B3E /* DetailCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountry.swift; sourceTree = "<group>"; };
+		0B86668926471B82008E4B3E /* Services+Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services+Countries.swift"; sourceTree = "<group>"; };
+		0BD4486526473723006BDB7B /* Model+Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Countries.swift"; sourceTree = "<group>"; };
+		0BD44869264739C3006BDB7B /* LoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
+		0BD4486C26473A33006BDB7B /* Model+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Auth.swift"; sourceTree = "<group>"; };
+		0BD4486F26473ADC006BDB7B /* Services+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services+Auth.swift"; sourceTree = "<group>"; };
 		27501A770DD2C529941D41FF /* Pods-BridgefyTechChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgefyTechChallenge.release.xcconfig"; path = "Target Support Files/Pods-BridgefyTechChallenge/Pods-BridgefyTechChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		CA43253EC09AA41689895FB0 /* Pods-BridgefyTechChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgefyTechChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BridgefyTechChallenge/Pods-BridgefyTechChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +85,7 @@
 		0B6E47FC2646FC6400E042B5 /* BridgefyTechChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0B86666A26471600008E4B3E /* Auth */,
 				0B866662264712A9008E4B3E /* Views */,
 				0B866663264712AE008E4B3E /* Controllers */,
 				0B866661264712A3008E4B3E /* Model */,
@@ -79,6 +104,9 @@
 		0B866661264712A3008E4B3E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0BD44868264739B1006BDB7B /* Auth */,
+				0B86668126471A05008E4B3E /* Countries */,
+				0B866680264719FC008E4B3E /* Servicies */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +145,46 @@
 			children = (
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0B86666A26471600008E4B3E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0B86666B2647166E008E4B3E /* Authentication.swift */,
+				0B86666F2647167C008E4B3E /* AppSettings.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0B866680264719FC008E4B3E /* Servicies */ = {
+			isa = PBXGroup;
+			children = (
+				0B866672264717CD008E4B3E /* ServicesManager.swift */,
+				0B86667A264718F9008E4B3E /* Response.swift */,
+				0B86667D2647197F008E4B3E /* CountriesServices.swift */,
+			);
+			path = Servicies;
+			sourceTree = "<group>";
+		};
+		0B86668126471A05008E4B3E /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				0B86668226471A12008E4B3E /* Country.swift */,
+				0B86668626471A22008E4B3E /* DetailCountry.swift */,
+				0B86668926471B82008E4B3E /* Services+Countries.swift */,
+				0BD4486526473723006BDB7B /* Model+Countries.swift */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		0BD44868264739B1006BDB7B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0BD44869264739C3006BDB7B /* LoginInfo.swift */,
+				0BD4486C26473A33006BDB7B /* Model+Auth.swift */,
+				0BD4486F26473ADC006BDB7B /* Services+Auth.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		109206F818982EEE57E1DC57 /* Pods */ = {
@@ -250,8 +318,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B86667E2647197F008E4B3E /* CountriesServices.swift in Sources */,
+				0BD4487026473ADC006BDB7B /* Services+Auth.swift in Sources */,
 				0B6E48022646FC6400E042B5 /* ViewController.swift in Sources */,
+				0B866673264717CD008E4B3E /* ServicesManager.swift in Sources */,
+				0B86668726471A22008E4B3E /* DetailCountry.swift in Sources */,
+				0BD4486A264739C3006BDB7B /* LoginInfo.swift in Sources */,
+				0BD4486D26473A33006BDB7B /* Model+Auth.swift in Sources */,
+				0BD4486626473723006BDB7B /* Model+Countries.swift in Sources */,
+				0B86668A26471B82008E4B3E /* Services+Countries.swift in Sources */,
 				0B6E47FE2646FC6400E042B5 /* AppDelegate.swift in Sources */,
+				0B86668326471A12008E4B3E /* Country.swift in Sources */,
+				0B8666702647167C008E4B3E /* AppSettings.swift in Sources */,
+				0B86667B264718F9008E4B3E /* Response.swift in Sources */,
+				0B86666C2647166E008E4B3E /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
