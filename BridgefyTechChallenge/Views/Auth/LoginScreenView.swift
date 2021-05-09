@@ -9,12 +9,24 @@ import UIKit
 
 class LoginScreenView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var logo: UIImageView!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loginButton: PrimaryButton!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        initComponents()
     }
-    */
+    
+    private func initComponents(){
+        self.backgroundColor = Styles.Color.bgGeneral
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
 
 }

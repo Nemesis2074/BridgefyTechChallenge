@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,12 +15,82 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginScreenView" customModule="BridgefyTechChallenge" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpn-qs-k76">
+                    <rect key="frame" x="0.0" y="336" width="414" height="526"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UJq-e4-T1P">
+                            <rect key="frame" x="32" y="32" width="350" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="d0a-2j-lZT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6SJ-rG-Mcl">
+                            <rect key="frame" x="32" y="104" width="350" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="7ka-Nk-APi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASk-u8-GER" customClass="PrimaryButton" customModule="BridgefyTechChallenge" customModuleProvider="target">
+                            <rect key="frame" x="32" y="176" width="350" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1Ay-GN-3tR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UJq-e4-T1P" firstAttribute="top" secondItem="Dpn-qs-k76" secondAttribute="top" constant="32" id="1dO-9y-okQ"/>
+                        <constraint firstItem="UJq-e4-T1P" firstAttribute="centerX" secondItem="Dpn-qs-k76" secondAttribute="centerX" id="1g5-f5-Kdj"/>
+                        <constraint firstItem="ASk-u8-GER" firstAttribute="leading" secondItem="Dpn-qs-k76" secondAttribute="leading" constant="32" id="4TU-vU-NGL"/>
+                        <constraint firstAttribute="trailing" secondItem="UJq-e4-T1P" secondAttribute="trailing" constant="32" id="7dM-KW-gPU"/>
+                        <constraint firstItem="6SJ-rG-Mcl" firstAttribute="leading" secondItem="Dpn-qs-k76" secondAttribute="leading" constant="32" id="Bkb-lV-B71"/>
+                        <constraint firstItem="UJq-e4-T1P" firstAttribute="leading" secondItem="Dpn-qs-k76" secondAttribute="leading" constant="32" id="Dyw-Bn-FfE"/>
+                        <constraint firstItem="6SJ-rG-Mcl" firstAttribute="top" secondItem="UJq-e4-T1P" secondAttribute="bottom" constant="32" id="RIG-bg-rsg"/>
+                        <constraint firstAttribute="trailing" secondItem="ASk-u8-GER" secondAttribute="trailing" constant="32" id="ZqT-Qe-ONp"/>
+                        <constraint firstAttribute="bottom" secondItem="ASk-u8-GER" secondAttribute="bottom" constant="32" id="lpU-Mf-A3P"/>
+                        <constraint firstItem="ASk-u8-GER" firstAttribute="top" secondItem="6SJ-rG-Mcl" secondAttribute="bottom" constant="32" id="oos-LO-lmN"/>
+                        <constraint firstAttribute="trailing" secondItem="6SJ-rG-Mcl" secondAttribute="trailing" constant="32" id="uRc-y9-eVi"/>
+                    </constraints>
+                </scrollView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_app" translatesAutoresizingMaskIntoConstraints="NO" id="Tea-LC-MaL">
+                    <rect key="frame" x="157" y="204" width="100" height="100"/>
+                    <color key="tintColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Tea-LC-MaL" secondAttribute="height" multiplier="1:1" id="wQq-jp-3wM"/>
+                        <constraint firstAttribute="width" constant="100" id="xHW-XW-qRa"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="142" y="110"/>
+            <constraints>
+                <constraint firstItem="Tea-LC-MaL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7PW-zg-mIp"/>
+                <constraint firstItem="Tea-LC-MaL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="160" id="833-eg-Y99"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dpn-qs-k76" secondAttribute="trailing" id="DlI-Ip-WaR"/>
+                <constraint firstItem="Dpn-qs-k76" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EIG-kC-IAb"/>
+                <constraint firstItem="Dpn-qs-k76" firstAttribute="top" secondItem="Tea-LC-MaL" secondAttribute="bottom" constant="32" id="bPe-Sn-qdx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dpn-qs-k76" secondAttribute="bottom" id="mhf-Ih-Aba"/>
+            </constraints>
+            <connections>
+                <outlet property="loginButton" destination="ASk-u8-GER" id="h88-Bp-5Jw"/>
+                <outlet property="logo" destination="Tea-LC-MaL" id="ODK-WU-mJa"/>
+                <outlet property="password" destination="6SJ-rG-Mcl" id="Fn8-ED-HWW"/>
+                <outlet property="scrollView" destination="Dpn-qs-k76" id="g39-IP-QKy"/>
+                <outlet property="username" destination="UJq-e4-T1P" id="Coe-3q-wFe"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="109.82142857142857"/>
         </view>
     </objects>
     <resources>
+        <image name="logo_app" width="100" height="100"/>
+        <namedColor name="AccentColor">
+            <color red="0.93300002813339233" green="0.36100000143051147" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

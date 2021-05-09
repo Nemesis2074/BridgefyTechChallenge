@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3BA515264757E400200685 /* UIStoryboard+Instances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA514264757E400200685 /* UIStoryboard+Instances.swift */; };
+		0B3BA5182647587600200685 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3BA5172647587600200685 /* Auth.storyboard */; };
+		0B3BA51B2647590000200685 /* AppDelegate+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA51A2647590000200685 /* AppDelegate+Config.swift */; };
+		0B3BA51E264759E300200685 /* DetailCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA51D264759E300200685 /* DetailCountryViewController.swift */; };
+		0B3BA52226475A8700200685 /* BLEScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA52126475A8700200685 /* BLEScreenView.swift */; };
+		0B3BA52526475A8F00200685 /* BLEScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3BA52426475A8F00200685 /* BLEScreenView.xib */; };
+		0B3BA52826475B7300200685 /* DetailCountryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA52726475B7300200685 /* DetailCountryScreenView.swift */; };
+		0B3BA52B26475B7B00200685 /* DetailCountryScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3BA52A26475B7B00200685 /* DetailCountryScreenView.xib */; };
+		0B3BA5302647644700200685 /* BorderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA52E2647644700200685 /* BorderCell.swift */; };
+		0B3BA5312647644700200685 /* BorderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3BA52F2647644700200685 /* BorderCell.xib */; };
+		0B3BA535264765BF00200685 /* UICollectionView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA534264765BF00200685 /* UICollectionView+Utils.swift */; };
+		0B3BA538264765E200200685 /* UITableView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA537264765E200200685 /* UITableView+Utils.swift */; };
+		0B3BA53C2647683500200685 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA53A2647683500200685 /* CountryCell.swift */; };
+		0B3BA53D2647683500200685 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3BA53B2647683500200685 /* CountryCell.xib */; };
+		0B3BA5412647692500200685 /* CountriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA5402647692500200685 /* CountriesController.swift */; };
+		0B3BA54526476A9E00200685 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BA54426476A9E00200685 /* Endpoints.swift */; };
 		0B6E47FE2646FC6400E042B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E47FD2646FC6400E042B5 /* AppDelegate.swift */; };
-		0B6E48022646FC6400E042B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E48012646FC6400E042B5 /* ViewController.swift */; };
 		0B6E48052646FC6400E042B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E48032646FC6400E042B5 /* Main.storyboard */; };
 		0B6E48072646FC6500E042B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E48062646FC6500E042B5 /* Assets.xcassets */; };
 		0B6E480A2646FC6500E042B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E48082646FC6500E042B5 /* LaunchScreen.storyboard */; };
@@ -28,14 +43,38 @@
 		0BD4488226473FA6006BDB7B /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4488126473FA6006BDB7B /* LoginScreenView.swift */; };
 		0BD4488526473FB0006BDB7B /* LoginScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD4488426473FB0006BDB7B /* LoginScreenView.xib */; };
 		0BD4488B26474079006BDB7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4488A26474079006BDB7B /* LoginViewController.swift */; };
+		0BD4489026474723006BDB7B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4488F26474723006BDB7B /* PrimaryButton.swift */; };
+		0BD448932647475E006BDB7B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD448922647475E006BDB7B /* Styles.swift */; };
+		0BD44896264747A4006BDB7B /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD44895264747A4006BDB7B /* UIColor+Utils.swift */; };
+		0BD47B07264753A100296831 /* KeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD47B06264753A100296831 /* KeyboardController.swift */; };
+		0BD47B0B2647549500296831 /* TabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD47B0A2647549500296831 /* TabsViewController.swift */; };
+		0BD47B0F2647552700296831 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD47B0E2647552700296831 /* CountriesViewController.swift */; };
+		0BD47B122647556000296831 /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD47B112647556000296831 /* BLEViewController.swift */; };
+		0BD47B15264755D200296831 /* CountriesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD47B14264755D200296831 /* CountriesScreenView.swift */; };
+		0BD47B18264755DC00296831 /* CountriesScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD47B17264755DC00296831 /* CountriesScreenView.xib */; };
 		9759C414DFBFA3FF71739DE8 /* Pods_BridgefyTechChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F3F78C9EF044BA3DC06B58 /* Pods_BridgefyTechChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06F3F78C9EF044BA3DC06B58 /* Pods_BridgefyTechChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BridgefyTechChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3BA514264757E400200685 /* UIStoryboard+Instances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Instances.swift"; sourceTree = "<group>"; };
+		0B3BA5172647587600200685 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		0B3BA51A2647590000200685 /* AppDelegate+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Config.swift"; sourceTree = "<group>"; };
+		0B3BA51D264759E300200685 /* DetailCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountryViewController.swift; sourceTree = "<group>"; };
+		0B3BA52126475A8700200685 /* BLEScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScreenView.swift; sourceTree = "<group>"; };
+		0B3BA52426475A8F00200685 /* BLEScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEScreenView.xib; sourceTree = "<group>"; };
+		0B3BA52726475B7300200685 /* DetailCountryScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountryScreenView.swift; sourceTree = "<group>"; };
+		0B3BA52A26475B7B00200685 /* DetailCountryScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCountryScreenView.xib; sourceTree = "<group>"; };
+		0B3BA52E2647644700200685 /* BorderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderCell.swift; sourceTree = "<group>"; };
+		0B3BA52F2647644700200685 /* BorderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BorderCell.xib; sourceTree = "<group>"; };
+		0B3BA534264765BF00200685 /* UICollectionView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Utils.swift"; sourceTree = "<group>"; };
+		0B3BA537264765E200200685 /* UITableView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
+		0B3BA53A2647683500200685 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		0B3BA53B2647683500200685 /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
+		0B3BA5402647692500200685 /* CountriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesController.swift; sourceTree = "<group>"; };
+		0B3BA54426476A9E00200685 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		0B6E47FA2646FC6400E042B5 /* BridgefyTechChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgefyTechChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6E47FD2646FC6400E042B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B6E48012646FC6400E042B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B6E48042646FC6400E042B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B6E48062646FC6500E042B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B6E48092646FC6500E042B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +95,15 @@
 		0BD4488126473FA6006BDB7B /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		0BD4488426473FB0006BDB7B /* LoginScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginScreenView.xib; sourceTree = "<group>"; };
 		0BD4488A26474079006BDB7B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0BD4488F26474723006BDB7B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		0BD448922647475E006BDB7B /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		0BD44895264747A4006BDB7B /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		0BD47B06264753A100296831 /* KeyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
+		0BD47B0A2647549500296831 /* TabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewController.swift; sourceTree = "<group>"; };
+		0BD47B0E2647552700296831 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		0BD47B112647556000296831 /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
+		0BD47B14264755D200296831 /* CountriesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesScreenView.swift; sourceTree = "<group>"; };
+		0BD47B17264755DC00296831 /* CountriesScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesScreenView.xib; sourceTree = "<group>"; };
 		27501A770DD2C529941D41FF /* Pods-BridgefyTechChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgefyTechChallenge.release.xcconfig"; path = "Target Support Files/Pods-BridgefyTechChallenge/Pods-BridgefyTechChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		CA43253EC09AA41689895FB0 /* Pods-BridgefyTechChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgefyTechChallenge.debug.xcconfig"; path = "Target Support Files/Pods-BridgefyTechChallenge/Pods-BridgefyTechChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +120,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B3BA513264757CE00200685 /* Instances */ = {
+			isa = PBXGroup;
+			children = (
+				0B3BA514264757E400200685 /* UIStoryboard+Instances.swift */,
+				0B3BA51A2647590000200685 /* AppDelegate+Config.swift */,
+			);
+			path = Instances;
+			sourceTree = "<group>";
+		};
+		0B3BA52D2647642E00200685 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				0B3BA52E2647644700200685 /* BorderCell.swift */,
+				0B3BA52F2647644700200685 /* BorderCell.xib */,
+				0B3BA53A2647683500200685 /* CountryCell.swift */,
+				0B3BA53B2647683500200685 /* CountryCell.xib */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		0B3BA53F2647691300200685 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0B3BA5402647692500200685 /* CountriesController.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		0B6E47F12646FC6400E042B5 = {
 			isa = PBXGroup;
 			children = (
@@ -93,15 +169,15 @@
 		0B6E47FC2646FC6400E042B5 /* BridgefyTechChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				0B86666A26471600008E4B3E /* Auth */,
 				0B866662264712A9008E4B3E /* Views */,
+				0B86666A26471600008E4B3E /* Auth */,
 				0B866663264712AE008E4B3E /* Controllers */,
 				0B866661264712A3008E4B3E /* Model */,
 				0B866664264712B9008E4B3E /* Utils */,
+				0B3BA513264757CE00200685 /* Instances */,
 				0B866666264712D0008E4B3E /* Storyboards */,
 				0B866665264712C8008E4B3E /* Resources */,
 				0B6E47FD2646FC6400E042B5 /* AppDelegate.swift */,
-				0B6E48012646FC6400E042B5 /* ViewController.swift */,
 				0B6E480B2646FC6500E042B5 /* Info.plist */,
 			);
 			path = BridgefyTechChallenge;
@@ -131,6 +207,7 @@
 		0B866663264712AE008E4B3E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0BD47B092647547300296831 /* Navigation */,
 				0BD448872647404D006BDB7B /* Auth */,
 				0BD4488826474054006BDB7B /* Countries */,
 				0BD448892647405D006BDB7B /* BLE */,
@@ -141,6 +218,9 @@
 		0B866664264712B9008E4B3E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0BD44895264747A4006BDB7B /* UIColor+Utils.swift */,
+				0B3BA534264765BF00200685 /* UICollectionView+Utils.swift */,
+				0B3BA537264765E200200685 /* UITableView+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -149,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				0B6E48062646FC6500E042B5 /* Assets.xcassets */,
+				0BD448922647475E006BDB7B /* Styles.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -158,6 +239,7 @@
 			children = (
 				0B6E48082646FC6500E042B5 /* LaunchScreen.storyboard */,
 				0B6E48032646FC6400E042B5 /* Main.storyboard */,
+				0B3BA5172647587600200685 /* Auth.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -177,6 +259,7 @@
 				0B866672264717CD008E4B3E /* ServicesManager.swift */,
 				0B86667A264718F9008E4B3E /* Response.swift */,
 				0B86667D2647197F008E4B3E /* CountriesServices.swift */,
+				0B3BA54426476A9E00200685 /* Endpoints.swift */,
 			);
 			path = Servicies;
 			sourceTree = "<group>";
@@ -206,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				0BD4487C26473F5B006BDB7B /* XibView.swift */,
+				0BD4488F26474723006BDB7B /* PrimaryButton.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -213,6 +297,11 @@
 		0BD4487A26473F10006BDB7B /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				0B3BA52D2647642E00200685 /* Items */,
+				0BD47B14264755D200296831 /* CountriesScreenView.swift */,
+				0BD47B17264755DC00296831 /* CountriesScreenView.xib */,
+				0B3BA52726475B7300200685 /* DetailCountryScreenView.swift */,
+				0B3BA52A26475B7B00200685 /* DetailCountryScreenView.xib */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -220,6 +309,8 @@
 		0BD4487B26473F41006BDB7B /* BLE */ = {
 			isa = PBXGroup;
 			children = (
+				0B3BA52126475A8700200685 /* BLEScreenView.swift */,
+				0B3BA52426475A8F00200685 /* BLEScreenView.xib */,
 			);
 			path = BLE;
 			sourceTree = "<group>";
@@ -237,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				0BD4488A26474079006BDB7B /* LoginViewController.swift */,
+				0BD47B06264753A100296831 /* KeyboardController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -244,6 +336,9 @@
 		0BD4488826474054006BDB7B /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				0B3BA53F2647691300200685 /* Delegates */,
+				0BD47B0E2647552700296831 /* CountriesViewController.swift */,
+				0B3BA51D264759E300200685 /* DetailCountryViewController.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -251,8 +346,17 @@
 		0BD448892647405D006BDB7B /* BLE */ = {
 			isa = PBXGroup;
 			children = (
+				0BD47B112647556000296831 /* BLEViewController.swift */,
 			);
 			path = BLE;
+			sourceTree = "<group>";
+		};
+		0BD47B092647547300296831 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0BD47B0A2647549500296831 /* TabsViewController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		109206F818982EEE57E1DC57 /* Pods */ = {
@@ -331,9 +435,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B3BA53D2647683500200685 /* CountryCell.xib in Resources */,
+				0B3BA5182647587600200685 /* Auth.storyboard in Resources */,
 				0BD4488526473FB0006BDB7B /* LoginScreenView.xib in Resources */,
+				0BD47B18264755DC00296831 /* CountriesScreenView.xib in Resources */,
+				0B3BA52526475A8F00200685 /* BLEScreenView.xib in Resources */,
 				0B6E480A2646FC6500E042B5 /* LaunchScreen.storyboard in Resources */,
 				0B6E48072646FC6500E042B5 /* Assets.xcassets in Resources */,
+				0B3BA5312647644700200685 /* BorderCell.xib in Resources */,
+				0B3BA52B26475B7B00200685 /* DetailCountryScreenView.xib in Resources */,
 				0B6E48052646FC6400E042B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,21 +497,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD4489026474723006BDB7B /* PrimaryButton.swift in Sources */,
 				0B86667E2647197F008E4B3E /* CountriesServices.swift in Sources */,
 				0BD4487026473ADC006BDB7B /* Services+Auth.swift in Sources */,
-				0B6E48022646FC6400E042B5 /* ViewController.swift in Sources */,
+				0BD47B15264755D200296831 /* CountriesScreenView.swift in Sources */,
+				0B3BA52226475A8700200685 /* BLEScreenView.swift in Sources */,
 				0B866673264717CD008E4B3E /* ServicesManager.swift in Sources */,
 				0BD4488226473FA6006BDB7B /* LoginScreenView.swift in Sources */,
+				0BD47B0F2647552700296831 /* CountriesViewController.swift in Sources */,
+				0B3BA5412647692500200685 /* CountriesController.swift in Sources */,
 				0B86668726471A22008E4B3E /* DetailCountry.swift in Sources */,
 				0BD4486A264739C3006BDB7B /* LoginInfo.swift in Sources */,
 				0BD4486D26473A33006BDB7B /* Model+Auth.swift in Sources */,
+				0BD47B0B2647549500296831 /* TabsViewController.swift in Sources */,
 				0BD4486626473723006BDB7B /* Model+Countries.swift in Sources */,
+				0B3BA515264757E400200685 /* UIStoryboard+Instances.swift in Sources */,
 				0B86668A26471B82008E4B3E /* Services+Countries.swift in Sources */,
+				0B3BA538264765E200200685 /* UITableView+Utils.swift in Sources */,
 				0B6E47FE2646FC6400E042B5 /* AppDelegate.swift in Sources */,
 				0B86668326471A12008E4B3E /* Country.swift in Sources */,
+				0B3BA535264765BF00200685 /* UICollectionView+Utils.swift in Sources */,
+				0BD47B07264753A100296831 /* KeyboardController.swift in Sources */,
+				0BD448932647475E006BDB7B /* Styles.swift in Sources */,
+				0B3BA5302647644700200685 /* BorderCell.swift in Sources */,
 				0B8666702647167C008E4B3E /* AppSettings.swift in Sources */,
+				0B3BA54526476A9E00200685 /* Endpoints.swift in Sources */,
+				0BD44896264747A4006BDB7B /* UIColor+Utils.swift in Sources */,
+				0BD47B122647556000296831 /* BLEViewController.swift in Sources */,
 				0BD4488B26474079006BDB7B /* LoginViewController.swift in Sources */,
+				0B3BA53C2647683500200685 /* CountryCell.swift in Sources */,
+				0B3BA51B2647590000200685 /* AppDelegate+Config.swift in Sources */,
 				0B86667B264718F9008E4B3E /* Response.swift in Sources */,
+				0B3BA51E264759E300200685 /* DetailCountryViewController.swift in Sources */,
+				0B3BA52826475B7300200685 /* DetailCountryScreenView.swift in Sources */,
 				0BD4487D26473F5B006BDB7B /* XibView.swift in Sources */,
 				0B86666C2647166E008E4B3E /* Authentication.swift in Sources */,
 			);

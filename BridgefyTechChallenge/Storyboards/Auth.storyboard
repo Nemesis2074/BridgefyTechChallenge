@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yHd-5M-Mae">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="3g4-Vp-DUC">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="yHd-5M-Mae" customClass="LoginViewController" customModule="BridgefyTechChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uka-MY-eIE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jT-Lr-Zre" customClass="XibView" customModule="BridgefyTechChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibFileName" value="LoginScreenView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O7c-TM-NA3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3jT-Lr-Zre" secondAttribute="bottom" id="AML-91-DXj"/>
+                            <constraint firstItem="3jT-Lr-Zre" firstAttribute="trailing" secondItem="uka-MY-eIE" secondAttribute="trailing" id="HID-cR-mK4"/>
+                            <constraint firstItem="3jT-Lr-Zre" firstAttribute="top" secondItem="uka-MY-eIE" secondAttribute="top" id="O4M-um-6Oj"/>
+                            <constraint firstItem="3jT-Lr-Zre" firstAttribute="leading" secondItem="uka-MY-eIE" secondAttribute="leading" id="Zy1-8V-67M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="3jT-Lr-Zre" id="rDh-Zd-8io"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6z-NR-nfX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,46 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mA8-Du-7OJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="Iyb-mj-ohA">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="BridgefyTechChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="BLEViewController" modalPresentationStyle="fullScreen" id="2ro-0w-7Qb" customClass="BLEViewController" customModule="BridgefyTechChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KDA-SS-aKu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcm-en-Zje" customClass="XibView" customModule="BridgefyTechChallenge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4N6-tT-M3z" customClass="XibView" customModule="BridgefyTechChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="xibFileName" value="LoginScreenView"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibFileName" value="BLEScreenView"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="hrh-3O-ZAv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Mcm-en-Zje" secondAttribute="bottom" id="1Jh-Bb-s1U"/>
-                            <constraint firstItem="Mcm-en-Zje" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D2N-GI-xrY"/>
-                            <constraint firstItem="Mcm-en-Zje" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Tuf-uW-TaS"/>
-                            <constraint firstItem="Mcm-en-Zje" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W0H-sB-edw"/>
+                            <constraint firstItem="4N6-tT-M3z" firstAttribute="top" secondItem="hrh-3O-ZAv" secondAttribute="top" id="Lae-8y-YQr"/>
+                            <constraint firstItem="4N6-tT-M3z" firstAttribute="bottom" secondItem="hrh-3O-ZAv" secondAttribute="bottom" id="VTn-jc-Dmc"/>
+                            <constraint firstItem="4N6-tT-M3z" firstAttribute="leading" secondItem="hrh-3O-ZAv" secondAttribute="leading" id="gj9-nR-ZHZ"/>
+                            <constraint firstItem="4N6-tT-M3z" firstAttribute="trailing" secondItem="hrh-3O-ZAv" secondAttribute="trailing" id="jky-fJ-CBM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xxu-4K-VDJ"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYT-Nu-Rfp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="94.419642857142847"/>
+            <point key="canvasLocation" x="2950.7246376811595" y="381.69642857142856"/>
+        </scene>
+        <!--Countries View Controller-->
+        <scene sceneID="mcV-In-ZCQ">
+            <objects>
+                <viewController storyboardIdentifier="CountriesViewController" modalPresentationStyle="fullScreen" id="wfG-wU-NE5" customClass="CountriesViewController" customModule="BridgefyTechChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u73-Mh-GDt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G25-KB-ZRH" customClass="XibView" customModule="BridgefyTechChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibFileName" value="CountriesScreenView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yuz-CV-u23"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G25-KB-ZRH" firstAttribute="bottom" secondItem="Yuz-CV-u23" secondAttribute="bottom" id="3Rm-gR-IOa"/>
+                            <constraint firstItem="G25-KB-ZRH" firstAttribute="trailing" secondItem="Yuz-CV-u23" secondAttribute="trailing" id="Hl5-Wv-ews"/>
+                            <constraint firstItem="G25-KB-ZRH" firstAttribute="top" secondItem="Yuz-CV-u23" secondAttribute="top" id="jyu-m8-cQR"/>
+                            <constraint firstItem="G25-KB-ZRH" firstAttribute="leading" secondItem="Yuz-CV-u23" secondAttribute="leading" id="wcy-XC-Oi0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Joz-Nh-ai1"/>
+                    <connections>
+                        <segue destination="bjI-AX-9Fx" kind="show" identifier="DetailCountrySegue" id="rTl-6N-xde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgj-up-UVD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2950.7246376811595" y="-294.64285714285711"/>
+        </scene>
+        <!--Detail Country View Controller-->
+        <scene sceneID="1Js-8z-EoG">
+            <objects>
+                <viewController storyboardIdentifier="DetailCountryViewController" id="bjI-AX-9Fx" customClass="DetailCountryViewController" customModule="BridgefyTechChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vsw-cn-rMh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oit-E9-FUB" customClass="XibView" customModule="BridgefyTechChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibFileName" value="DetailCountryScreenView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Cu-0a-YMY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oit-E9-FUB" firstAttribute="leading" secondItem="3Cu-0a-YMY" secondAttribute="leading" id="5ZB-1g-T5L"/>
+                            <constraint firstItem="Oit-E9-FUB" firstAttribute="bottom" secondItem="3Cu-0a-YMY" secondAttribute="bottom" id="S52-J2-1n8"/>
+                            <constraint firstItem="Oit-E9-FUB" firstAttribute="trailing" secondItem="3Cu-0a-YMY" secondAttribute="trailing" id="ox8-3F-tDt"/>
+                            <constraint firstItem="Oit-E9-FUB" firstAttribute="top" secondItem="3Cu-0a-YMY" secondAttribute="top" id="udw-DS-cwg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ecb-q7-nYJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wg4-xZ-P4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3892.753623188406" y="-295.3125"/>
+        </scene>
+        <!--Tabs View Controller-->
+        <scene sceneID="mpw-mS-POi">
+            <objects>
+                <tabBarController storyboardIdentifier="TabsViewController" modalPresentationStyle="fullScreen" id="mA8-Du-7OJ" customClass="TabsViewController" customModule="BridgefyTechChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gHN-td-oGX"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qVX-Ko-Hyh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Mbh-q6-SRM" kind="relationship" relationship="viewControllers" id="d4s-hX-FhO"/>
+                        <segue destination="t0L-Z1-cTB" kind="relationship" relationship="viewControllers" id="ok9-Mx-HIM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPp-kU-4SW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="79"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Gvn-jq-hHQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mbh-q6-SRM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" image="tab_countries" selectedImage="tab_countries_on" id="S8m-aa-Ysn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LaG-8h-etm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wfG-wU-NE5" kind="relationship" relationship="rootViewController" id="XMS-Kw-YE0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1d-oF-XdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="-294"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="LaB-bO-ZcW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t0L-Z1-cTB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" image="tab_ble" selectedImage="tab_ble_on" id="cII-yL-Rwi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D6I-0B-XzR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2ro-0w-7Qb" kind="relationship" relationship="rootViewController" id="PZQ-F9-ogi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgt-lx-nLb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1963.7681159420292" y="382.36607142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="tab_ble" width="31" height="31"/>
+        <image name="tab_ble_on" width="31" height="31"/>
+        <image name="tab_countries" width="31" height="31"/>
+        <image name="tab_countries_on" width="31" height="31"/>
+        <namedColor name="AccentColor">
+            <color red="0.93300002813339233" green="0.36100000143051147" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
