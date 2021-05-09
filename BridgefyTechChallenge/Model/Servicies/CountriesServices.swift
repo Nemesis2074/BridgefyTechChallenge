@@ -8,6 +8,6 @@
 import Foundation
 
 internal struct CountriesServices{
-    static let All = "https://restcountries-v1.p.rapidapi.com/all"
-    static let Detail = "https://restcountries-v1.p.rapidapi.com/all"
+    static let All = Endpoints.Services + "/all"
+    static let Detail = Endpoints.Services + "/alpha/%@"
 }

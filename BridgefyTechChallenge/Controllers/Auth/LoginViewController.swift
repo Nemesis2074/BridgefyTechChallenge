@@ -9,21 +9,60 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var containerView: XibView!
+    
+    private var detailView: LoginScreenView{
+        return containerView.contentView as! LoginScreenView
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private lazy var keyboardController: KeyboardController = {
+        return KeyboardController()
+    }()
+    
+    private func initComponents(){
+        
+        detailView.loginButton.addTarget(self,
+                                         action: #selector(login),
+                                         for: .touchUpInside)
     }
-    */
+    
+    @IBAction func login(){
+        AppDelegate.shared().showMainSection()
+    }
+    
+    @IBAction func hideKeyboard(){
+        self.view.endEditing(true)
+    }
+    
+    private func configKeyboard(){
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        detailView.addGestureRecognizer(tapGesture)
+        
+        self.keyboardController.onKeyboardWillShow { (frame) in
+            let insets = UIEdgeInsets(top: 0,left: 0,
+                                      bottom: frame.height, right: 0)
+            
+        }
+        
+        self.keyboardController.onKeyboardWillHide {
+            
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initComponents()
+        configKeyboard()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        keyboardController.registerObservers()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        keyboardController.unregisterObservers()
+    }
 
 }

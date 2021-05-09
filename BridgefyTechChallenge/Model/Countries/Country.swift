@@ -14,6 +14,15 @@ struct Country: Codable {
     let alpha3Code: String
     let region: String
     
+    var codeFormatted: String{
+        return "\(alpha2Code) / \(alpha3Code)"
+    }
+    
+    var flagUrl: URL?{
+        let string = String(format: Endpoints.Images, alpha2Code.lowercased())
+        return URL(string: string)
+    }
+    
     enum CodingKeys: String, CodingKey {
         case name, alpha2Code, alpha3Code, region
     }
